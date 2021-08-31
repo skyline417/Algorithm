@@ -23,10 +23,10 @@ int main(){
             scanf("%d",&a[i]);
         }
         int flag=0;
-        int f=1;
-        while(flag==0){
+        int j=0;
+        while(1){
         	bool is=0;
-        	if(f&1){
+        	if((j+1)&1){
         		for(int i=1;i<=n-2;i+=2){
         			if(a[i]>a[i+1]){
         				//cout<<a[i]<<" "<<a[i+1]<<endl;
@@ -44,21 +44,18 @@ int main(){
 				}
 				//for(int i=1;i<=n;i++) cout<<a[i]<<" "; puts("");
 			}
-			++f;
-			++ans;
+			++j;
 			
 			if(is){
 				flag=0;
 			}else{
 				--flag;
 			}
-			if(flag==-2){
-				break;
-			}
+			if(flag==-2) break;
 			
 		}
 		//cout<<"ans: ";
-        printf("%d\n",ans-1);
+        printf("%d\n",j-2);
     }
     return 0;
 }
