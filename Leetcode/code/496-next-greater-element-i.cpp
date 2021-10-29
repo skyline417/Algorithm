@@ -12,7 +12,7 @@ public:
 
         for(int i=m-1;i>=0;--i){
             p[nums2[i]]=i;
-            while(tt && stk[tt]<nums2[i]) --tt;
+            while(tt && stk[tt]<=nums2[i]) --tt;
             if(!tt) ans[i]=-1;
             else ans[i]=stk[tt];
             stk[++tt]=nums2[i];
