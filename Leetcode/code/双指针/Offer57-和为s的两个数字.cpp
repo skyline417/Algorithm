@@ -1,5 +1,5 @@
 /*
-题意：递增数组 2sum
+题意：递增正整数数组 2sum
 思路：双指针，如果nums[i]+nums[j]>target --j, 如果nums[i]+nums[j]<target ++i
 */
 class Solution {

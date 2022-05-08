@@ -1,5 +1,5 @@
 /*
-题意：1~n中数字1的个数
+题意：1~n中数字1的个数 同offer43
 思路：https://www.cnblogs.com/xuanxufeng/p/6854105.html
 */
 class Solution {
